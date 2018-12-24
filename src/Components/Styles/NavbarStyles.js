@@ -18,6 +18,16 @@ export const MobileNavDiv = styled.div`
   button {
     margin-top: 10px;
   }
+  a {
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: ${props => props.theme.black}
+  }
+  .active-nav-link a {
+    color: ${props => props.theme.orange}
+    border-bottom: 2px solid ${props => props.theme.orange}
+  }
 `;
 
 export const DesktopNavDiv = styled.div`
@@ -34,22 +44,25 @@ export const DesktopNavDiv = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 0 200px;
+    border-bottom: 3px solid ${props => props.theme.orange};
   }
   img.desktop-menu-image {
     width: 100px !important;
     height: 100px;
   }
   a {
-    margin: 35px 0 0;
+    margin: 38px 0 0;
     font-size: 2rem;
     text-transform: uppercase;
-    color: #22293b;
+    color: ${props => props.theme.black};
     height: 30px;
+    letter-spacing: 0.15rem;
     &:hover {
-      border-bottom: 2px solid orange;
+      border-bottom: 2px solid ${props => props.theme.orange};
     }
-    &:active {
-      color: orange;
-    }
+  }
+  .active-nav-link a {
+    color: ${props => props.theme.orange};
+    border-bottom: 2px solid ${props => props.theme.orange};
   }
 `;

@@ -27,7 +27,9 @@ class Navbar extends Component {
         <MobileNavDiv>
           <div className="mobile-nav">
             <HamburgerSpin isActive={this.state.visible} toggleButton={this.toggleButton} />
-            <Image source={ColorLogo} title="Top main color logo" classNameHere="mobile-menu-image" />
+            <a href="/">
+              <Image source={ColorWordLogo} title="Top main color logo" classNameHere="mobile-menu-image" />
+            </a>
           </div>
           <div>
             <Sidebar.Pushable as={Segment}>
@@ -41,20 +43,24 @@ class Navbar extends Component {
                 width="thin"
               >
                 <Menu.Item as="a">
-                  <Image source={ColorLogo} />
-                  <a href="/">Home</a>
+                  <NavLink exact to="/" activeClassName="active-nav-link">
+                    <a>Home</a>
+                  </NavLink>
                 </Menu.Item>
                 <Menu.Item as="a">
-                  <Icon name="info" />
-                  <a href="/about">About</a>
+                  <NavLink to="/about" activeClassName="active-nav-link">
+                    <a>About</a>
+                  </NavLink>
                 </Menu.Item>
                 <Menu.Item as="a">
-                  <Icon name="cart" />
-                  <a href="/work">Work</a>
+                  <NavLink to="/work" activeClassName="active-nav-link">
+                    <a>Our Work</a>
+                  </NavLink>
                 </Menu.Item>
                 <Menu.Item as="a">
-                  <Icon name="up chevron" />
-                  <a href="/contact">Contact</a>
+                  <NavLink to="/contact" activeClassName="active-nav-link">
+                    <a>Contact</a>
+                  </NavLink>
                 </Menu.Item>
               </Sidebar>
               <Sidebar.Pusher dimmed={visible}>{this.props.children}</Sidebar.Pusher>
@@ -63,12 +69,21 @@ class Navbar extends Component {
         </MobileNavDiv>
         <DesktopNavDiv>
           <ul>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
+            <NavLink exact to="/" activeClassName="active-nav-link">
+              <a>Home</a>
+            </NavLink>
+            <NavLink to="/work" activeClassName="active-nav-link">
+              <a>Our Work</a>
+            </NavLink>
             <Image source={ColorWordLogo} title="Top main color logo" classNameHere="desktop-menu-image" />
-            <a href="/work">Our Work</a>
-            <a href="/contact">Contact</a>
+            <NavLink to="/about" activeClassName="active-nav-link">
+              <a>About</a>
+            </NavLink>
+            <NavLink to="/contact" activeClassName="active-nav-link">
+              <a>Contact</a>
+            </NavLink>
           </ul>
+
           {this.props.children}
         </DesktopNavDiv>
       </React.Fragment>
