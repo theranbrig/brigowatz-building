@@ -9,7 +9,7 @@ export const MobileNavDiv = styled.div`
   }
   .mobile-menu-image {
     height: 60px;
-    width: 60px;
+    width: 50px;
     justify: right;
     position: absolute;
     top: 10px;
@@ -22,11 +22,10 @@ export const MobileNavDiv = styled.div`
     font-family: 'Teko', sans-serif;
     font-size: 1.5rem;
     text-transform: uppercase;
-    color: ${props => props.theme.black}
+    color: ${props => props.theme.black};
   }
-  .active-nav-link a {
-    color: ${props => props.theme.orange}
-    border-bottom: 2px solid ${props => props.theme.orange}
+  .active-nav-link {
+    color: ${props => props.theme.orange};
   }
 `;
 
@@ -36,6 +35,7 @@ export const DesktopNavDiv = styled.div`
   margin: 0 auto;
   width: 100%;
   font-family: 'Teko', sans-serif;
+
   @media (max-width: 950px) {
     display: none;
   }
@@ -47,7 +47,7 @@ export const DesktopNavDiv = styled.div`
     border-bottom: 3px solid ${props => props.theme.orange};
   }
   img.desktop-menu-image {
-    width: 100px !important;
+    width: 80px;
     height: 100px;
   }
   a {
@@ -63,6 +63,5 @@ export const DesktopNavDiv = styled.div`
   }
   .active-nav-link a {
     color: ${props => props.theme.orange};
-    border-bottom: 2px solid ${props => props.theme.orange};
   }
 `;

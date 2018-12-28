@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ColorWordLogo from '../Assets/Logos/ColorWordLogo.png';
+import ColorWordLogo from '../Assets/Logos/NewLogoColor.png';
 import Image from './Logo';
 import FooterStyles from './Styles/FooterStyles';
 

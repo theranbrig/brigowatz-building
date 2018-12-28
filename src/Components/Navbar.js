@@ -4,8 +4,8 @@ import { Icon, Menu, Segment, Sidebar } from 'semantic-ui-react';
 import { HamburgerSpin } from 'react-animated-burgers';
 import { NavLink } from 'react-router-dom';
 import Image from './Logo';
-import ColorLogo from '../Assets/Logos/ColorLogo.png';
-import ColorWordLogo from '../Assets/Logos/ColorWordLogo.png';
+import NewLogoColor from '../Assets/Logos/NewLogoColor.png';
+import ColorWordLogo from '../Assets/Logos/NewBigColor.png';
 import { MobileNavDiv, DesktopNavDiv } from './Styles/NavbarStyles';
 
 class Navbar extends Component {
@@ -26,9 +26,9 @@ class Navbar extends Component {
       <React.Fragment>
         <MobileNavDiv>
           <div className="mobile-nav">
-            <HamburgerSpin isActive={this.state.visible} toggleButton={this.toggleButton} />
+            <HamburgerSpin isActive={this.state.visible} toggleButton={this.toggleButton} barColor="#535C73" />
             <a href="/">
-              <Image source={ColorWordLogo} title="Top main color logo" classNameHere="mobile-menu-image" />
+              <Image source={NewLogoColor} title="Top main color logo" classNameHere="mobile-menu-image" />
             </a>
           </div>
           <div>

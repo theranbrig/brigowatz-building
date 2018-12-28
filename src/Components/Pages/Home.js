@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { Icon, Button } from 'semantic-ui-react';
+import { Icon } from 'semantic-ui-react';
 import WOW from 'wowjs';
 import HomeStyles from '../Styles/HomeStyles';
-import WhiteLogo from '../../Assets/Logos/WhiteWordLogo.png';
 import ContactForm from '../ContactForm';
+import MiniContactBox from '../MiniContactBox';
+import WhiteIcon from '../../Assets/Logos/NewBigWhite.png';
 
 class Home extends Component {
   componentDidMount() {
@@ -14,21 +15,15 @@ class Home extends Component {
   render() {
     return (
       <HomeStyles>
-        <main id="title-splash" className="wow fadeIn">
-          <img src={WhiteLogo} alt="main logo" className="main-white-logo" />
+        <div rel="preload" className="preload-images" />
+        <main rel="preload" id="title-splash" className="wow fadeIn">
+          <img src={WhiteIcon} alt="main logo" className="main-white-logo" />
           <h2>A commitment to quality craftsmanship is our passion.</h2>
           <h3>Southeastern Wisconsin's Premier Finishing Work</h3>
           <Icon name="chevron down" />
         </main>
-        <aside id="divider-box" className="wow fadeIn">
-          <h4>Contact us to learn more about what we do.</h4>
-          <a href="/contact" className="contact-button">
-            <Button inverted color="orange">
-              Contact Us
-            </Button>
-          </a>
-        </aside>
-        <div id="info-boxes">
+        <MiniContactBox title="Get in touch to learn more about us." />
+        <div rel="preload" id="info-boxes">
           <a href="/work">
             <div className="box-1 wow fadeIn">
               <h2>See Our Work</h2>
@@ -38,7 +33,7 @@ class Home extends Component {
               </p>
             </div>
           </a>
-          <a href="/about">
+          <a rel="preload" href="/about">
             <div className="box-2 wow fadeIn">
               <h2>Our Story</h2>
               <p>
@@ -48,7 +43,7 @@ class Home extends Component {
             </div>
           </a>
         </div>
-        <div id="quick-contact" className="wow fadeIn">
+        <div rel="preload" id="quick-contact" className="wow fadeIn">
           <ContactForm />
         </div>
       </HomeStyles>
