@@ -1,16 +1,13 @@
 import styled from 'styled-components';
 import MainImage from '../../Assets/Home/Splash_Image.jpg';
-import ColorMap from '../../Assets/Maps/WhiteMap.png';
-import AboutImage from '../../Assets/Kitchens/camylla-battani-794111-unsplash.jpg';
+import WhiteMap from '../../Assets/Maps/WhiteMap.jpg';
+import AboutImage from '../../Assets/Home/Home_Kitchen.jpg';
 import WorkImage from '../../Assets/Home/Tools_Image.jpg';
 
 const HomeStyles = styled.div`
-  .ui.segment {
-    border-radius: 0 !important;
-  }
   .preload-images {
     display: none;
-    background: url(${MainImage}), url(${ColorMap}), url(${AboutImage}), url(${WorkImage});
+    background: url(${MainImage}), url(${WhiteMap}), url(${AboutImage}), url(${WorkImage});
   }
   /* Main Title Area */
   #title-splash {
@@ -118,7 +115,7 @@ const HomeStyles = styled.div`
   div#quick-contact.wow.fadeIn {
     width: 100%;
     height: 400px;
-    background: url(${ColorMap});
+    background: url(${WhiteMap});
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

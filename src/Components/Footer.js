@@ -5,7 +5,7 @@ import FooterStyles from './Styles/FooterStyles';
 
 const Footer = () => (
   <FooterStyles>
-    <Image source={ColorWordLogo} title="Main color logo" />
+    <Image source={ColorWordLogo} title="Brigowatz Home Concepts Simple Logo" />
     <ul>
       <li>
         <a href="/">Home</a>

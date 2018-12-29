@@ -3,40 +3,30 @@ import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Icon, Grid } from 'semantic-ui-react';
 import styled from 'styled-components';
 import CarouselComponent from '../Carousel';
-import { workData, workData2 } from '../../Assets/workData';
+import {
+  workPageTopHoriz,
+  workPageTopVert,
+  bathroomWork,
+  livingSpacesWork,
+  kitchenWork,
+  bedroomWork,
+} from '../../Assets/workData';
 import { VerticalCarouselDiv, HorizontalCarouselDiv, SmallCarouselDiv } from '../Styles/CarouselsStyles.js';
 import MiniContactBox from '../MiniContactBox';
-
-const WorkStyles = styled.div`
-  .more-work {
-    margin-top: -8px;
-    border-bottom: 3px solid ${props => props.theme.orange};
-    border-top: 3px solid ${props => props.theme.orange};
-    background: rgba(7, 32, 51, 0.8);
-    color: ${props => props.theme.offWhite};
-    h1 {
-      padding-top: 15px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 300;
-    }
-    i {
-      font-size: 3rem;
-    }
-  }
-`;
+import WorkPageStyles from '../Styles/WorkPageStyles';
 
 const Work = () => (
-  <WorkStyles>
+  <WorkPageStyles>
     <Grid centered>
       <Grid.Row>
-        <Grid.Column computer={12} mobile={16}>
+        <Grid.Column computer={12} mobile={16} style={{ padding: '0' }}>
           <HorizontalCarouselDiv>
-            <CarouselComponent carouselData={workData} interval={6000} />
+            <CarouselComponent carouselData={workPageTopHoriz} interval={6000} />
           </HorizontalCarouselDiv>
         </Grid.Column>
-        <Grid.Column computer={4} mobile={16} only="computer">
+        <Grid.Column computer={4} mobile={16} only="computer" style={{ padding: '0' }}>
           <VerticalCarouselDiv>
-            <CarouselComponent carouselData={workData2} interval={8000} />
+            <CarouselComponent carouselData={workPageTopVert} interval={8000} />
           </VerticalCarouselDiv>
         </Grid.Column>
       </Grid.Row>
@@ -46,37 +36,45 @@ const Work = () => (
       <Icon name="chevron down" />
     </div>
     <Grid centered textAlign="center" stackable>
-      <Grid.Row centered>
+      <Grid.Row id="bottom-carousels">
         <Grid.Column width={8}>
           <SmallCarouselDiv>
-            <h1>Bathrooms</h1>
-            <CarouselComponent carouselData={workData} interval={null} />
+            <div id="bathrooms">
+              <h1>Bathrooms</h1>
+              <CarouselComponent carouselData={bathroomWork} interval={null} />
+            </div>
           </SmallCarouselDiv>
         </Grid.Column>
         <Grid.Column width={8}>
           <SmallCarouselDiv>
-            <h1>Kitchens</h1>
-            <CarouselComponent carouselData={workData} interval={null} />
+            <div id="kitchens">
+              <h1>Kitchens</h1>
+              <CarouselComponent carouselData={kitchenWork} interval={null} />
+            </div>
           </SmallCarouselDiv>
         </Grid.Column>
       </Grid.Row>
       <Grid.Row centered>
         <Grid.Column width={8}>
           <SmallCarouselDiv>
-            <h1>Living Spaces</h1>
-            <CarouselComponent carouselData={workData} interval={null} />
+            <div id="living-spaces">
+              <h1>Living Spaces</h1>
+              <CarouselComponent carouselData={livingSpacesWork} interval={null} />
+            </div>
           </SmallCarouselDiv>
         </Grid.Column>
         <Grid.Column width={8}>
           <SmallCarouselDiv>
-            <h1>Detail Work</h1>
-            <CarouselComponent carouselData={workData} interval={null} />
+            <div id="bedrooms">
+              <h1>Bedrooms</h1>
+              <CarouselComponent carouselData={bedroomWork} interval={null} />
+            </div>
           </SmallCarouselDiv>
         </Grid.Column>
       </Grid.Row>
     </Grid>
     <MiniContactBox title="See how we can make your dream home come true." />
-  </WorkStyles>
+  </WorkPageStyles>
 );
 
 export default Work;

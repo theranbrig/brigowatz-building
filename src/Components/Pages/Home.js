@@ -17,7 +17,7 @@ class Home extends Component {
       <HomeStyles>
         <div rel="preload" className="preload-images" />
         <main rel="preload" id="title-splash" className="wow fadeIn">
-          <img src={WhiteIcon} alt="main logo" className="main-white-logo" />
+          <img src={WhiteIcon} alt="Brigowatz Home Concepts White Logo" className="main-white-logo" />
           <h2>A commitment to quality craftsmanship is our passion.</h2>
           <h3>Southeastern Wisconsin's Premier Finishing Work</h3>
           <Icon name="chevron down" />

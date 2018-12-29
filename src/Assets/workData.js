@@ -1,87 +1,117 @@
-import FarmingtonBathroom from './Bathrooms/jared-rice-408402-unsplash.jpg';
-import WatertownKitchen from './Bathrooms/chastity-cortijo-604616-unsplash.jpg';
-import MadisonKitchen from './Kitchens/naomi-hebert-188443-unsplash.jpg';
-import OtherRemodel from './Kitchens/toa-heftiba-616938-unsplash.jpg';
-import OtherRemodel2 from './Kitchens/aaron-huber-401200-unsplash.jpg';
-// Veritical Image Imports
-import Remodel1 from './OtherRemodels/armin-djuhic-609206-unsplash.jpg';
-import Remodel2 from './Home/Staircase_Image.jpg';
-import Remodel3 from './Kitchens/charles-deluvio-625891-unsplash.jpg';
-import Remodel4 from './Kitchens/camylla-battani-794111-unsplash.jpg';
-import Remodel5 from './Kitchens/jason-briscoe-332507-unsplash.jpg';
+import FarmingtonBathroom from './Bathrooms/Bathroom1.jpg';
+import WatertownLivingRoom from './LivingRooms/Living_Room1.jpg';
+import MadisonKitchen from './Kitchens/Kitchen1.jpg';
 
-export const workData = [
+// Veritical Image Imports
+import MilwaukeeLivingRoom from './LivingRooms/Living_Room2.jpg';
+import JeffersonKitchen from './Home/Home_Kitchen.jpg';
+import OconomowocKitchen from './Kitchens/Kitchen2.jpg';
+
+// Bathroom Image Imports
+import JCBathroom from './Bathrooms/Bathroom2.jpg';
+import MadisonBathroom from './Bathrooms/Bathroom3.jpg';
+import MilwaukeeBathroom from './Bathrooms/Bathroom4.jpg';
+
+// Kitchen Image Imports
+import WatertownKitchen from './Kitchens/Kitchen3.jpg';
+import ColumbusKitchen from './Kitchens/Kitchen4.jpg';
+import MilwaukeeKitchen from './Kitchens/Kitchen5.jpg';
+
+// Bedroom Image Imports
+import OregonBedroom from './Bedrooms/Bedroom1.jpg';
+import FitchburgBedroom from './Bedrooms/Bedroom2.jpg';
+import MadisonBedroom from './Bedrooms/Bedroom3.jpg';
+
+// Living Room Image Imports
+import LakeMillsLivingRoom from './LivingRooms/Living_Room3.jpg';
+import WaterlooLivingRoom from './LivingRooms/Living_Room4.jpg';
+import RockfordLivingRoom from './LivingRooms/Living_Room5.jpg';
+
+export const workPageTopHoriz = [
   {
-    name: 'Farmington Bathroom',
-    location: 'Farmington Wisconsin',
+    name: 'Farmington Bathroom Remodel',
     image: FarmingtonBathroom,
-    description: 'Bathroom in Farmington WI',
-    about: 'Great Tile Work and Wonderful Fixtures',
   },
   {
-    name: 'Watertown Kitchen',
-    location: 'Watertown Wisconsin',
-    image: WatertownKitchen,
-    description: 'Kitchen in Watertown WI',
-    about: 'Great Tile Work and Wonderful Fixtures',
+    name: 'Watertown Kitchen Remodel',
+    image: WatertownLivingRoom,
   },
   {
-    name: 'Madison Kitchen',
-    location: 'Watertown Wisconsin',
+    name: 'Madison Kitchen Remodel',
     image: MadisonKitchen,
-    description: 'Kitchen in Watertown WI',
-    about: 'Great Tile Work and Wonderful Fixtures',
-  },
-  {
-    name: 'Watertown Kitchen',
-    location: 'Watertown Wisconsin',
-    image: OtherRemodel,
-    description: 'Kitchen in Watertown WI',
-    about: 'Great Tile Work and Wonderful Fixtures',
-  },
-  {
-    name: 'Watertown Kitchen',
-    location: 'Watertown Wisconsin',
-    image: OtherRemodel2,
-    description: 'Kitchen in Watertown WI',
-    about: 'Great Tile Work and Wonderful Fixtures',
   },
 ];
 
-export const workData2 = [
+export const workPageTopVert = [
   {
-    name: 'Farmington Bathroom',
-    location: 'Farmington Wisconsin',
-    image: Remodel1,
-    description: 'Bathroom in Farmington WI',
-    about: 'Great Tile Work and Wonderful Fixtures',
+    name: 'Miwaukee Bathroom Remodel',
+    image: MilwaukeeLivingRoom,
   },
   {
-    name: 'Watertown Kitchen',
-    location: 'Watertown Wisconsin',
-    image: Remodel2,
-    description: 'Kitchen in Watertown WI',
-    about: 'Great Tile Work and Wonderful Fixtures',
+    name: 'Jefferson Kitchen Remodel',
+    image: JeffersonKitchen,
   },
   {
-    name: 'Madison Kitchen',
-    location: 'Watertown Wisconsin',
-    image: Remodel3,
-    description: 'Kitchen in Watertown WI',
-    about: 'Great Tile Work and Wonderful Fixtures',
+    name: 'Oconomowoc Kitchen Remodel',
+    image: OconomowocKitchen,
+  },
+];
+export const bathroomWork = [
+  {
+    name: "Johnson's Creek Bathroom Remodel",
+    image: JCBathroom,
   },
   {
-    name: 'Watertown Kitchen',
-    location: 'Watertown Wisconsin',
-    image: Remodel4,
-    description: 'Kitchen in Watertown WI',
-    about: 'Great Tile Work and Wonderful Fixtures',
+    name: 'Madison Bathroom Remodel',
+    image: MadisonBathroom,
   },
   {
-    name: 'Watertown Kitchen',
-    location: 'Watertown Wisconsin',
-    image: Remodel5,
-    description: 'Kitchen in Watertown WI',
-    about: 'Great Tile Work and Wonderful Fixtures',
+    name: 'Milwaukee Bathroom Remodel',
+    image: MilwaukeeBathroom,
+  },
+];
+
+export const livingSpacesWork = [
+  {
+    name: 'Lake Mills Living Room Remodel',
+    image: LakeMillsLivingRoom,
+  },
+  {
+    name: 'Waterloo Living Room Remodel',
+    image: WaterlooLivingRoom,
+  },
+  {
+    name: 'Rockford Living Room Remodel',
+    image: RockfordLivingRoom,
+  },
+];
+
+export const kitchenWork = [
+  {
+    name: 'Watertown Kitchen Remodel',
+    image: WatertownKitchen,
+  },
+  {
+    name: 'Columbus Kitchen Remodel',
+    image: ColumbusKitchen,
+  },
+  {
+    name: 'Milwaukee Kitchen Remodel',
+    image: MilwaukeeKitchen,
+  },
+];
+
+export const bedroomWork = [
+  {
+    name: 'Oregon Bedroom Remodel',
+    image: OregonBedroom,
+  },
+  {
+    name: 'Fitchburg Bedroom Remodel',
+    image: FitchburgBedroom,
+  },
+  {
+    name: 'Madison Bedroom Remodel',
+    image: MadisonBedroom,
   },
 ];

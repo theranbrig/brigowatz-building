@@ -28,7 +28,11 @@ class Navbar extends Component {
           <div className="mobile-nav">
             <HamburgerSpin isActive={this.state.visible} toggleButton={this.toggleButton} barColor="#535C73" />
             <a href="/">
-              <Image source={NewLogoColor} title="Top main color logo" classNameHere="mobile-menu-image" />
+              <Image
+                source={NewLogoColor}
+                title="Brigowatz Home Concepts Color Logo"
+                classNameHere="mobile-menu-image"
+              />
             </a>
           </div>
           <div>
@@ -48,13 +52,13 @@ class Navbar extends Component {
                   </NavLink>
                 </Menu.Item>
                 <Menu.Item as="a">
-                  <NavLink to="/about" activeClassName="active-nav-link">
-                    <a>About</a>
+                  <NavLink to="/work" activeClassName="active-nav-link">
+                    <a>Our Work</a>
                   </NavLink>
                 </Menu.Item>
                 <Menu.Item as="a">
-                  <NavLink to="/work" activeClassName="active-nav-link">
-                    <a>Our Work</a>
+                  <NavLink to="/about" activeClassName="active-nav-link">
+                    <a>About Us</a>
                   </NavLink>
                 </Menu.Item>
                 <Menu.Item as="a">
@@ -75,9 +79,13 @@ class Navbar extends Component {
             <NavLink to="/work" activeClassName="active-nav-link">
               <a>Our Work</a>
             </NavLink>
-            <Image source={ColorWordLogo} title="Top main color logo" classNameHere="desktop-menu-image" />
+            <Image
+              source={ColorWordLogo}
+              title="Brigowatz Home Concepts Color Logo"
+              classNameHere="desktop-menu-image"
+            />
             <NavLink to="/about" activeClassName="active-nav-link">
-              <a>About</a>
+              <a>About Us</a>
             </NavLink>
             <NavLink to="/contact" activeClassName="active-nav-link">
               <a>Contact</a>

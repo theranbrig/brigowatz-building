@@ -3,6 +3,11 @@ import styled from 'styled-components';
 export const MobileNavDiv = styled.div`
   .mobile-nav {
     height: 80px;
+    border-bottom: 3px solid ${props => props.theme.orange};
+  }
+  .ui.segment {
+    border: none;
+    border-radius: 0px !important;
   }
   @media (min-width: 950px) {
     display: none;
@@ -35,7 +40,7 @@ export const DesktopNavDiv = styled.div`
   margin: 0 auto;
   width: 100%;
   font-family: 'Teko', sans-serif;
-
+  border-bottom: 3px solid ${props => props.theme.orange};
   @media (max-width: 950px) {
     display: none;
   }
