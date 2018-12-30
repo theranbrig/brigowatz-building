@@ -44,7 +44,9 @@ class Home extends Component {
           </a>
         </div>
         <div rel="preload" id="quick-contact" className="wow fadeIn">
-          <ContactForm />
+          <div id="home-contact-form-area">
+            <ContactForm />
+          </div>
         </div>
       </HomeStyles>
     );

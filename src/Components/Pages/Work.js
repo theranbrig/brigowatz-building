@@ -19,12 +19,12 @@ const Work = () => (
   <WorkPageStyles>
     <Grid centered>
       <Grid.Row>
-        <Grid.Column computer={12} mobile={16} style={{ padding: '0' }}>
+        <Grid.Column computer={12} tablet={16} style={{ padding: '0' }}>
           <HorizontalCarouselDiv>
             <CarouselComponent carouselData={workPageTopHoriz} interval={6000} />
           </HorizontalCarouselDiv>
         </Grid.Column>
-        <Grid.Column computer={4} mobile={16} only="computer" style={{ padding: '0' }}>
+        <Grid.Column computer={4} tablet={0} style={{ padding: '0' }} only="computer">
           <VerticalCarouselDiv>
             <CarouselComponent carouselData={workPageTopVert} interval={8000} />
           </VerticalCarouselDiv>

@@ -5,9 +5,10 @@ const FooterStyles = styled.div`
   position: relative
   width: 100%;
   font-family: 'Roboto', sans-serif;
+  height: 100px;
+  background: white;
   img {
     width: 100px;
-    height: 100px;
     margin: 5px;
     @media (max-width: 420px) {
         width: 50px;

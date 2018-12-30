@@ -21,16 +21,20 @@ export const HorizontalCarouselDiv = styled.div`
   .ui.grid > .row > .column {
     padding-left: 0 !important;
   }
+  @media (max-width: 1600px) {
+    width: 100%;
+  }
 `;
 
 export const VerticalCarouselDiv = styled.div`
   background: black;
   height: 100%;
-  @media (max-width: 650px) {
+  @media (max-width: 990px) {
     display: none;
   }
   img {
     height: 100% !important;
+    max-height: 600px;
   }
   div.item,
   div.item.active {

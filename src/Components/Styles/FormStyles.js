@@ -2,8 +2,7 @@ import styled from 'styled-components';
 
 const FormStyles = styled.div`
   font-family: 'Roboto', sans-serif;
-  width: 60%;
-  margin-left: 20%;
+  font-weight: 300;
   padding-top: 12px;
   @media (max-width: 450px) {
     width: 90%;
@@ -25,6 +24,11 @@ const FormStyles = styled.div`
   textarea {
     border: 1px solid ${props => props.theme.orange} !important;
     resize: none !important;
+  }
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
   }
 `;
 

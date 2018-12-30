@@ -130,6 +130,10 @@ const HomeStyles = styled.div`
       padding-top: 5px;
     }
   }
+  #home-contact-form-area {
+    width: 60%;
+    margin-left: 20%;
+  }
 `;
 
 export default HomeStyles;
