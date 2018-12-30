@@ -1,7 +1,5 @@
 import React from 'react';
-import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Icon, Grid } from 'semantic-ui-react';
-import styled from 'styled-components';
 import CarouselComponent from '../Carousel';
 import {
   workPageTopHoriz,

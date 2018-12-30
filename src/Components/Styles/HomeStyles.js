@@ -133,6 +133,10 @@ const HomeStyles = styled.div`
   #home-contact-form-area {
     width: 60%;
     margin-left: 20%;
+    @media (max-width: 450px) {
+      width: 90%;
+      margin-left: 5%;
+    }
   }
 `;
 

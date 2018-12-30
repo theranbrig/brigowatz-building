@@ -8,7 +8,10 @@ const encode = data =>
     .join('&');
 
 class ContactForm extends Component {
-  state = { email: '', name: '', message: '' };
+  constructor(props) {
+    super(props);
+    this.state = { name: '', email: '', message: '' };
+  }
 
   handleSubmit = e => {
     fetch('/', {
@@ -26,10 +29,11 @@ class ContactForm extends Component {
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
   render() {
+    const { name, email, message } = this.state;
     return (
       <FormStyles>
         <Segment inverted>
-          <Form inverted stackable onSubmit={this.handleSubmit} netlify>
+          <Form inverted stackable onSubmit={this.handleSubmit}>
             <h2>Contact Us Today</h2>
             <p>
               Send us a quick message to and we'll get back to you as soon as possible about creating your next dream
@@ -43,7 +47,7 @@ class ContactForm extends Component {
                     id="name"
                     type="text"
                     name="name"
-                    value={this.state.name}
+                    value={name}
                     onChange={this.handleChange}
                     placeholder="Enter Name"
                   />
@@ -56,7 +60,7 @@ class ContactForm extends Component {
                     id="email"
                     type="email"
                     name="email"
-                    value={this.state.email}
+                    value={email}
                     onChange={this.handleChange}
                     placeholder="Enter Email"
                   />
@@ -69,7 +73,7 @@ class ContactForm extends Component {
                   label="Message"
                   id="message"
                   name="message"
-                  value={this.state.message}
+                  value={message}
                   onChange={this.handleChange}
                   placeholder="Write a message telling us what you are looking for."
                 />

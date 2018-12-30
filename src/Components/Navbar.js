@@ -1,8 +1,9 @@
 /* eslint-disable react/no-access-state-in-setstate */
 import React, { Component } from 'react';
-import { Icon, Menu, Segment, Sidebar } from 'semantic-ui-react';
+import { Menu, Segment, Sidebar } from 'semantic-ui-react';
 import { HamburgerSpin } from 'react-animated-burgers';
 import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import Image from './Logo';
 import NewLogoColor from '../Assets/Logos/NewLogoColor.png';
 import ColorWordLogo from '../Assets/Logos/NewBigColor.png';
@@ -98,5 +99,9 @@ class Navbar extends Component {
     );
   }
 }
+
+Navbar.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default Navbar;

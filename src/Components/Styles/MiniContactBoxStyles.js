@@ -10,9 +10,6 @@ const MiniDividerStyles = styled.div`
     justify-content: space-between;
     background: rgba(7, 32, 51, 0.8);
     border-top: 3px solid ${props => props.theme.orange};
-    /* @media (min-width: 768px) {
-      padding-top: 10px;
-    } */
     @media (max-width: 750px) {
         padding-top: 10px;
       }

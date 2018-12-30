@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
+import PropTypes from 'prop-types';
 
 const CarouselComponent = props => (
   <Carousel pauseOnHover interval={props.interval}>
@@ -13,5 +14,10 @@ const CarouselComponent = props => (
     ))}
   </Carousel>
 );
+
+CarouselComponent.propTypes = {
+  interval: PropTypes.number.isRequired,
+  carouselData: PropTypes.object.isRequired,
+};
 
 export default CarouselComponent;

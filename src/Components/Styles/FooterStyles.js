@@ -8,7 +8,8 @@ const FooterStyles = styled.div`
   height: 100px;
   background: white;
   img {
-    width: 100px;
+    width: 70px;
+    height: 80px;
     margin: 5px;
     @media (max-width: 420px) {
         width: 50px;

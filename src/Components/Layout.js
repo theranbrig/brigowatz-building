@@ -1,7 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import styled, { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 import Navbar from './Navbar';
 import Home from './Pages/Home';
 import About from './Pages/About';
@@ -17,7 +16,7 @@ const theme = {
   offWhite: '#fff',
 };
 
-const Layout = props => (
+const Layout = () => (
   <ThemeProvider theme={theme}>
     <React.Fragment>
       <Router>

@@ -1,59 +1,9 @@
 import React from 'react';
 import { Grid, Image, Button } from 'semantic-ui-react';
-import styled from 'styled-components';
 import Bathroom from '../../Assets/Bathrooms/Bathroom4.jpg';
 import Kitchen from '../../Assets/Kitchens/Kitchen1.jpg';
 import LivingRoom from '../../Assets/LivingRooms/Living_Room4.jpg';
-
-const AboutPageStyles = styled.div`
-  margin: 20px auto;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  h1 {
-    font-family: 'Teko', sans-serif;
-    font-weight: 300;
-    font-size: 3rem;
-  }
-  h1,
-  h2,
-  li {
-    color: ${props => props.theme.darkBlue};
-  }
-  p {
-    font-size: 1.5rem;
-  }
-  ul {
-    display: block;
-    padding: 0;
-    border: none;
-  }
-  li {
-    display: inline-block;
-    width: 25%;
-    text-align: center;
-    font-size: 1.8rem;
-    padding: 20px 0;
-  }
-  #about-info {
-    padding-bottom: 200px;
-  }
-  @media (max-width: 850px) {
-    img.ui.medium.image {
-      display: inline-block !important;
-      width: 33% !important;
-      margin: 0 !important;
-    }
-    li {
-      width: 50%;
-    }
-    h2 {
-      padding-top: 20px;
-    }
-    #about-info {
-      padding-bottom: 50px;
-    }
-  }
-`;
+import AboutPageStyles from '../Styles/AboutPageStyles';
 
 const About = () => (
   <AboutPageStyles>
