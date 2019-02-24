@@ -1,5 +1,5 @@
 import React from 'react';
-import { Segment, Grid, Icon } from 'semantic-ui-react';
+import { Segment, Icon } from 'semantic-ui-react';
 import ContactForm from '../ContactForm';
 import ContactPageStyles from '../Styles/ContactPageStyles';
 

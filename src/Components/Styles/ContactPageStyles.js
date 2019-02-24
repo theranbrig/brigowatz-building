@@ -13,7 +13,7 @@ const ContactPageStyles = styled.div`
     grid-template-areas:
       'info'
       'form';
-    padding: 80px 20px;
+    padding: 80px 15px;
   }
   h2 {
     color: ${props => props.theme.orange};
