@@ -37,6 +37,15 @@ const WorkPageStyles = styled.div`
   div.ui.centered.stackable.center.aligned.grid {
     margin: 0 auto;
   }
+
+  .slideshows {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+
+    @media (max-width: 990px) {
+      grid-template-columns: 1fr 0;
+    }
+  }
 `;
 
 export default WorkPageStyles;

@@ -49,22 +49,22 @@ class Navbar extends Component {
               >
                 <Menu.Item as="a">
                   <NavLink exact to="/" activeClassName="active-nav-link">
-                    <a>Home</a>
+                    <a href="/">Home</a>
                   </NavLink>
                 </Menu.Item>
                 <Menu.Item as="a">
                   <NavLink to="/work" activeClassName="active-nav-link">
-                    <a>Our Work</a>
+                    <a href="/work">Our Work</a>
                   </NavLink>
                 </Menu.Item>
                 <Menu.Item as="a">
                   <NavLink to="/about" activeClassName="active-nav-link">
-                    <a>About Us</a>
+                    <a href="/about">About Us</a>
                   </NavLink>
                 </Menu.Item>
                 <Menu.Item as="a">
                   <NavLink to="/contact" activeClassName="active-nav-link">
-                    <a>Contact</a>
+                    <a href="/contact">Contact</a>
                   </NavLink>
                 </Menu.Item>
               </Sidebar>
@@ -75,10 +75,10 @@ class Navbar extends Component {
         <DesktopNavDiv>
           <ul>
             <NavLink exact to="/" activeClassName="active-nav-link">
-              <a>Home</a>
+              <a href="/">Home</a>
             </NavLink>
             <NavLink to="/work" activeClassName="active-nav-link">
-              <a>Our Work</a>
+              <a href="/work">Our Work</a>
             </NavLink>
             <Image
               source={ColorWordLogo}
@@ -86,13 +86,12 @@ class Navbar extends Component {
               classNameHere="desktop-menu-image"
             />
             <NavLink to="/about" activeClassName="active-nav-link">
-              <a>About Us</a>
+              <a href="/about">About Us</a>
             </NavLink>
             <NavLink to="/contact" activeClassName="active-nav-link">
-              <a>Contact</a>
+              <a href="/contact">Contact</a>
             </NavLink>
           </ul>
-
           {this.props.children}
         </DesktopNavDiv>
       </React.Fragment>

@@ -3,7 +3,6 @@ import styled from 'styled-components';
 const FormStyles = styled.div`
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  padding-top: 12px;
   @media (max-width: 450px) {
     width: 90%;
     margin-left: 5%;

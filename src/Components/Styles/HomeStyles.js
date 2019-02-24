@@ -20,6 +20,9 @@ const HomeStyles = styled.div`
     background-size: cover;
     color: ${props => props.theme.offWhite};
     text-align: center;
+    display: grid;
+    align-items: center;
+    justify-items: center;
     h2 {
       margin-top: 0;
       padding: 20px 0 0;
@@ -27,11 +30,10 @@ const HomeStyles = styled.div`
       font-weight: 300;
       font-size: 3rem;
       width: 60%;
-      margin-left: 20%;
       border-top: 3px solid ${props => props.theme.orange};
       letter-spacing: 0.1rem;
       text-shadow: 2px 2px 10px #333;
-      @media (max-width: 420px) {
+      @media (max-width: 900px) {
         font-size: 2rem;
       }
     }
@@ -40,14 +42,14 @@ const HomeStyles = styled.div`
       font-size: 2rem;
       letter-spacing: 0.1rem;
       text-shadow: 2px 2px 10px #333;
-      @media (max-width: 420px) {
+      @media (max-width: 900px) {
         font-size: 1.5rem;
         width: 90%;
         margin-left: 5%;
       }
     }
     img.main-white-logo {
-      padding-top: 60px;
+      padding-top: 30px;
       margin: 0 auto;
       height: 300px;
       width: 200px;
@@ -57,8 +59,8 @@ const HomeStyles = styled.div`
     }
 
     i {
-      margin-top: 30px;
-      font-size: 4rem;
+      margin-top: 10px;
+      font-size: 3rem;
     }
     i:hover {
       text-shadow: 0px 3px 10px #333;
@@ -72,11 +74,7 @@ const HomeStyles = styled.div`
       font-family: 'Teko', sans-serif;
       font-weight: 300;
       font-size: 4rem;
-      margin-top: 40px;
       text-align: center;
-      @media (max-width: 420px) {
-        margin-top: 15px;
-      }
     }
     p {
       letter-spacing: 0rem;
@@ -84,13 +82,11 @@ const HomeStyles = styled.div`
       text-shadow: 2px 2px 10px #333;
       font-family: 'Roboto', sans-serif;
       font-size: 1.5rem;
-      width: 80%;
-      margin-left: 10%;
     }
     .box-1 {
       float: left;
       background: linear-gradient(rgba(22, 22, 22, 0.45), rgba(200, 200, 200, 0.25)), url(${AboutImage});
-      @media (max-width: 420px) {
+      @media (max-width: 769px) {
         float: none;
       }
     }
@@ -100,6 +96,12 @@ const HomeStyles = styled.div`
     }
     .box-1,
     .box-2 {
+      display: grid;
+      padding: 20px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 3fr;
+      justify-items: center;
+      align-items: center;
       width: 50%;
       height: 300px;
       background-position: center center;
@@ -107,7 +109,7 @@ const HomeStyles = styled.div`
       background-size: cover;
       color: ${props => props.theme.offWhite};
       border-top: 3px solid ${props => props.theme.orange};
-      @media (max-width: 420px) {
+      @media (max-width: 769px) {
         width: 100%;
       }
     }
@@ -120,22 +122,25 @@ const HomeStyles = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     border-top: 3px solid ${props => props.theme.orange};
-    float: left;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: center;
+    padding: 20px;
     @media (max-width: 768px) {
       height: 480px;
-      padding-top: 5px;
+      padding: 40px;
     }
     @media (max-width: 450px) {
       height: 520px;
-      padding-top: 5px;
+      padding: 40px;
     }
   }
   #home-contact-form-area {
-    width: 60%;
-    margin-left: 20%;
+    padding: 10px;
     @media (max-width: 450px) {
-      width: 90%;
-      margin-left: 5%;
+      width: 100%;
     }
   }
 `;

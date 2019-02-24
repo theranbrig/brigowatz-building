@@ -21,7 +21,6 @@ class ContactForm extends Component {
     })
       .then(() => alert('Success!'))
       .catch(error => alert(error));
-
     e.preventDefault();
     this.setState({ email: '', name: '', message: '' });
   };
@@ -80,7 +79,7 @@ class ContactForm extends Component {
               </Form.Field>
             </Form.Group>
             <Button type="submit" inverted color="orange">
-              Contact Us
+              Send
             </Button>
           </Form>
         </Segment>

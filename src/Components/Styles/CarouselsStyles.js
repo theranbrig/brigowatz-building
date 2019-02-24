@@ -33,8 +33,12 @@ export const VerticalCarouselDiv = styled.div`
     display: none;
   }
   img {
-    height: 100% !important;
-    max-height: 600px;
+    position: absolute;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
   }
   div.item,
   div.item.active {
@@ -43,8 +47,6 @@ export const VerticalCarouselDiv = styled.div`
   div.carousel-inner,
   div.carousel.slide {
     height: 100%;
-    width: calc(100% + 1rem);
-    margin-left: -1rem;
   }
   a {
     height: 100%;

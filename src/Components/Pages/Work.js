@@ -15,20 +15,16 @@ import WorkPageStyles from '../Styles/WorkPageStyles';
 
 const Work = () => (
   <WorkPageStyles>
-    <Grid centered>
-      <Grid.Row>
-        <Grid.Column computer={12} tablet={16} style={{ padding: '0' }}>
-          <HorizontalCarouselDiv>
-            <CarouselComponent carouselData={workPageTopHoriz} interval={6000} />
-          </HorizontalCarouselDiv>
-        </Grid.Column>
-        <Grid.Column computer={4} tablet={0} style={{ padding: '0' }} only="computer">
-          <VerticalCarouselDiv>
-            <CarouselComponent carouselData={workPageTopVert} interval={8000} />
-          </VerticalCarouselDiv>
-        </Grid.Column>
-      </Grid.Row>
-    </Grid>
+    <div className="slideshows">
+      <div className="horizontal-slideshow">
+        <CarouselComponent carouselData={workPageTopHoriz} interval={6000} />
+      </div>
+      <div className="vertical-slideshow">
+        <VerticalCarouselDiv>
+          <CarouselComponent carouselData={workPageTopVert} interval={8000} />
+        </VerticalCarouselDiv>
+      </div>
+    </div>
     <div className="more-work">
       <h1>Check out more of our work and see what we can do for you.</h1>
       <Icon name="chevron down" />
