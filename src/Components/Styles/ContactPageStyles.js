@@ -4,21 +4,29 @@ import WhiteMap from '../../Assets/Maps/WhiteMap.jpg';
 const ContactPageStyles = styled.div`
   background: url(${WhiteMap});
   min-height: 650px;
-  margin-top: 15px;
-  @media (max-width: 450px) {
+  display: grid;
+  grid-template-areas: 'info form';
+  padding: 100px 155px;
+  grid-gap: 20px;
+  @media (max-width: 900px) {
     height: 1200px;
+    grid-template-areas:
+      'info'
+      'form';
+    padding: 80px 20px;
   }
   h2 {
     color: ${props => props.theme.orange};
   }
+
+  div.contact-form {
+    grid-area: form;
+  }
+
   div.ui.inverted.segment.contact-info {
+    height: 100%;
+    grid-area: info;
     background: rgba(7, 32, 51, 0.8);
-    margin-top: 12px !important;
-    @media (max-width: 450px) {
-      width: 90% !important;
-      margin-left: 5%;
-      height: 420px;
-    }
     h2 {
       font-family: 'Roboto', sans-serif !important;
       font-weight: 300;
@@ -29,13 +37,7 @@ const ContactPageStyles = styled.div`
       font-size: 1.165rem;
     }
   }
-  div.ui.inverted.segment {
-    width: 100% !important;
-    height: 525px;
-    @media (max-width: 450px) {
-      height: 650px;
-    }
-  }
+
   textarea {
     height: 200px;
   }

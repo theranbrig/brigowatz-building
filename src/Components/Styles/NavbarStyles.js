@@ -36,7 +36,6 @@ export const MobileNavDiv = styled.div`
 
 export const DesktopNavDiv = styled.div`
   display: inline-block;
-  text-align: center;
   margin: 0 auto;
   width: 100%;
   font-family: 'Teko', sans-serif;
@@ -46,8 +45,11 @@ export const DesktopNavDiv = styled.div`
   }
   ul {
     margin: 0;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
     padding: 0 200px;
     border-bottom: 3px solid ${props => props.theme.orange};
   }
@@ -56,15 +58,11 @@ export const DesktopNavDiv = styled.div`
     height: 100px;
   }
   a {
-    margin: 38px 0 0;
     font-size: 2rem;
     text-transform: uppercase;
     color: ${props => props.theme.black};
     height: 30px;
     letter-spacing: 0.15rem;
-    &:hover {
-      border-bottom: 2px solid ${props => props.theme.orange};
-    }
   }
   .active-nav-link a {
     color: ${props => props.theme.orange};

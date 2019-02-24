@@ -4,8 +4,6 @@ const FormStyles = styled.div`
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   @media (max-width: 450px) {
-    width: 90%;
-    margin-left: 5%;
     button {
       margin-top: 10px !important;
     }
@@ -13,11 +11,9 @@ const FormStyles = styled.div`
       padding-top: 10px;
     }
   }
-  .ui.segment {
+  div.ui.segment {
+    padding: 20px;
     background: rgba(7, 32, 51, 0.8);
-  }
-  label {
-    padding-bottom: 10px;
   }
   input,
   textarea {

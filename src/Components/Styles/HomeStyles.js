@@ -130,11 +130,7 @@ const HomeStyles = styled.div`
     padding: 20px;
     @media (max-width: 768px) {
       height: 480px;
-      padding: 40px;
-    }
-    @media (max-width: 450px) {
-      height: 520px;
-      padding: 40px;
+      padding: 30px 10px;
     }
   }
   #home-contact-form-area {
