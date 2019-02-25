@@ -104,6 +104,7 @@ const HomeStyles = styled.div`
       align-items: center;
       width: 50%;
       height: 300px;
+      text-align: center;
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;

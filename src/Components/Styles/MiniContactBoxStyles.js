@@ -6,13 +6,14 @@ const MiniDividerStyles = styled.div`
     color: ${props => props.theme.offWhite}
     height: 80px;
     display: grid;
-    grid-template-columns: 6fr 1fr;
+    grid-template-columns: 5fr 1fr;
     align-items: center;
     background: rgba(7, 32, 51, 0.8);
     border-top: 3px solid ${props => props.theme.orange};
-    padding: 0 50px;
+    padding: 0 150px;
     @media (max-width: 750px) {
       padding: 0 10px;
+      grid-template-columns: 4fr 1fr;
     }
     h4 {
       text-shadow: 2px 2px 10px #333;
@@ -28,10 +29,21 @@ const MiniDividerStyles = styled.div`
       }
     }
     a.contact-button {
+      font-family: 'Roboto', sans-serif !important;
+      letter-spacing: 0.03rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      align-items: center;
+      justify-items: center;
+      color: ${props => props.theme.offWhite};
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 2px solid ${props => props.theme.orange};
       align-items: right;
-      margin-top: -5px ;
+      height: 60%;
       &:hover {
-        border-bottom: none;
+        background-color: ${props => props.theme.orange};
       }
       @media (max-width: 750px) {
         margin-top: 0;

@@ -14,8 +14,11 @@ export const HorizontalCarouselDiv = styled.div`
   }
   a.carousel-control.right,
   a.carousel-control.left {
-    background: none;
-    margin: 0;
+    height: 100% !important;
+  }
+  div.carousel-inner,
+  div.carousel.slide {
+    height: 100% !important;
   }
   .ui.grid > .column:not(.row),
   .ui.grid > .row > .column {
@@ -58,6 +61,7 @@ export const VerticalCarouselDiv = styled.div`
   a.carousel-control.left {
     background: none;
     margin: 0;
+    height: 100% !important;
   }
 `;
 
@@ -82,6 +86,7 @@ export const SmallCarouselDiv = styled.div`
   a.carousel-control.left {
     background: none;
     margin: 0;
+    height: 100%;
   }
   div.item.active,
   div.item {

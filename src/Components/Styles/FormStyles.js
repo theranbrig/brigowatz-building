@@ -19,6 +19,9 @@ const FormStyles = styled.div`
   textarea {
     border: 1px solid ${props => props.theme.orange} !important;
     resize: none !important;
+    &:focus {
+      box-shadow: inset 2px 2px 10px ${props => props.theme.orange};
+    }
   }
   h2 {
     font-family: 'Roboto', sans-serif;

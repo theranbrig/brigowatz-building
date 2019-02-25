@@ -56,6 +56,7 @@ const ContactPageStyles = styled.div`
     grid-template-rows: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
+    padding: 5px;
   }
   li {
     width: 100%;
@@ -66,6 +67,7 @@ const ContactPageStyles = styled.div`
     font-family: 'Roboto', sans-serif !important;
     font-weight: 300;
     text-transform: none;
+    font-size: 1.4rem;
     &:hover {
       border: none;
       color: ${props => props.theme.orange};

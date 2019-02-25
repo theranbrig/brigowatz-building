@@ -8,9 +8,7 @@ const MiniContactBox = props => (
     <aside rel="preload" id="divider-box" className="wow fadeIn">
       <h4>{props.title}</h4>
       <a href="/contact" className="contact-button">
-        <Button inverted color="orange">
-          Contact Us
-        </Button>
+        Contact Us
       </a>
     </aside>
   </MiniDividerStyles>

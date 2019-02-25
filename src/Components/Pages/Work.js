@@ -17,7 +17,9 @@ const Work = () => (
   <WorkPageStyles>
     <div className="slideshows">
       <div className="horizontal-slideshow">
-        <CarouselComponent carouselData={workPageTopHoriz} interval={6000} />
+        <HorizontalCarouselDiv>
+          <CarouselComponent carouselData={workPageTopHoriz} interval={6000} />
+        </HorizontalCarouselDiv>
       </div>
       <div className="vertical-slideshow">
         <VerticalCarouselDiv>
