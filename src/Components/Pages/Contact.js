@@ -24,13 +24,6 @@ const Contact = () => (
             </a>
           </li>
           <li>
-            <p>Linked-In</p>
-            <a href="https://linkedin.com">
-              <Icon name="linkedin" />
-              Ryan Brigowatz
-            </a>
-          </li>
-          <li>
             <p>Facebook:</p>
             <a href="https://facebook.com">
               <Icon name="facebook" />

@@ -26,6 +26,11 @@ const ContactPageStyles = styled.div`
   div.ui.inverted.segment.contact-info {
     height: 100%;
     grid-area: info;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr;
+    justify-items: center;
+    align-items: center;
     background: rgba(7, 32, 51, 0.8);
     h2 {
       font-family: 'Roboto', sans-serif !important;
@@ -46,6 +51,11 @@ const ContactPageStyles = styled.div`
     padding: 0;
     border: none;
     list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
   }
   li {
     width: 100%;
