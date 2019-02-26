@@ -3,7 +3,7 @@ import styled from 'styled-components';
 // Work Page Title Carousels
 export const HorizontalCarouselDiv = styled.div`
   img {
-    max-height: 600px;
+    max-height: 550px;
     width: 100%;
   }
   a {
@@ -15,6 +15,7 @@ export const HorizontalCarouselDiv = styled.div`
   a.carousel-control.right,
   a.carousel-control.left {
     height: 100% !important;
+    background: none;
   }
   div.carousel-inner,
   div.carousel.slide {
@@ -30,14 +31,12 @@ export const HorizontalCarouselDiv = styled.div`
 `;
 
 export const VerticalCarouselDiv = styled.div`
-  background: black;
   height: 100%;
   @media (max-width: 990px) {
     display: none;
   }
   img {
     position: absolute;
-    top: 0;
     min-width: 100%;
     min-height: 100%;
     width: auto;

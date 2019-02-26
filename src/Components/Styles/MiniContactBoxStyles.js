@@ -13,7 +13,7 @@ const MiniDividerStyles = styled.div`
     padding: 0 150px;
     @media (max-width: 750px) {
       padding: 0 10px;
-      grid-template-columns: 4fr 1fr;
+      grid-template-columns: 2fr 1fr;
     }
     h4 {
       text-shadow: 2px 2px 10px #333;
@@ -41,7 +41,6 @@ const MiniDividerStyles = styled.div`
       border-radius: 5px;
       border: 2px solid ${props => props.theme.orange};
       align-items: right;
-      height: 60%;
       &:hover {
         background-color: ${props => props.theme.orange};
       }
@@ -52,6 +51,9 @@ const MiniDividerStyles = styled.div`
     button {
       width: 100% !important;
     }
+  }
+  a {
+    min-height: 40px !important;
   }
 `;
 
