@@ -26,14 +26,12 @@ const FooterStyles = styled.div`
       margin: 5px 0;
     }
   }
-  li {
+  a {
     display: inline-block;
-    padding: 10px;
-    a {
-      color: ${props => props.theme.black};
-      &:hover {
+    padding: 10px 10px 10px 5px;
+    color: ${props => props.theme.black};
+    &:hover {
         color: ${props => props.theme.orange}
-      }
     }
     @media (max-width: 420px) {
       display: block;
@@ -58,9 +56,10 @@ const FooterStyles = styled.div`
   }
   .theran-link {
     position: absolute;
-    right: 10px;
-    bottom: 10px;
+    right: 5px;
+    bottom: 5px;
     a {
+      padding: 0;
       color: ${props => props.theme.orange}
     }
     @media (max-width: 420px) {

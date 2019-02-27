@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import ColorWordLogo from '../Assets/Logos/NewLogoColor.png';
 import Image from './Logo';
 import FooterStyles from './Styles/FooterStyles';
@@ -7,18 +8,18 @@ const Footer = () => (
   <FooterStyles>
     <Image source={ColorWordLogo} title="Brigowatz Home Concepts Simple Logo" />
     <ul>
-      <li>
+      <NavLink to="/">
         <a href="/">Home</a>
-      </li>
-      <li>
+      </NavLink>
+      <NavLink to="/about">
         <a href="/about">About</a>
-      </li>
-      <li>
+      </NavLink>
+      <NavLink to="/work">
         <a href="/work">Work</a>
-      </li>
-      <li>
+      </NavLink>
+      <NavLink to="/contact">
         <a href="/contact">Contact</a>
-      </li>
+      </NavLink>
     </ul>
     <div className="bottom-info">
       <p>
@@ -28,7 +29,7 @@ const Footer = () => (
     </div>
     <div className="theran-link">
       <p>
-        <a href="https://theran.co">Built by theran.co</a>
+        <a href="https://theran.co">Made by theran.co</a>
       </p>
     </div>
   </FooterStyles>

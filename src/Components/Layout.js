@@ -20,16 +20,18 @@ const Layout = () => (
   <ThemeProvider theme={theme}>
     <React.Fragment>
       <Router>
-        <Navbar>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/work" component={Work} />
-            <Route exact path="/contact" component={Contact} />
-          </Switch>
-        </Navbar>
+        <>
+          <Navbar>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/about" component={About} />
+              <Route exact path="/work" component={Work} />
+              <Route exact path="/contact" component={Contact} />
+            </Switch>
+          </Navbar>
+          <Footer />
+        </>
       </Router>
-      <Footer />
     </React.Fragment>
   </ThemeProvider>
 );

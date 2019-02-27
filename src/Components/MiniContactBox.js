@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import MiniDividerStyles from './Styles/MiniContactBoxStyles';
